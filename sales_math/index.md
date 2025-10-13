@@ -16,7 +16,7 @@ Percentage change measures the relative difference between a new value and an ol
 $$
 \begin{aligned}
 \text{Percentage Increase} &= \frac{\text{Increase Amount}}{\text{Original Value}} \times 100\% \\\\
-{\small \text{Increase Amount} &= \text{New Value} - \text{Original Value}}
+\text{Increase Amount} &= \text{New Value} - \text{Original Value}
 \end{aligned}
 $$
 
