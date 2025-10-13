@@ -1,18 +1,4 @@
-
-### Percentage Change
-$$
-\text{Percentage Change} = 
-\frac{\text{New Value} - \text{Old Value}}{\text{Old Value}} \times 100\%
-$$
-
-**Explanation**  
-Percentage change measures the relative difference between a new value and an old value.  
-- Positive result → increase  
-- Negative result → decrease  
-
----
-### Percentage Increase
-
+### Percentage Increase### Percentage Change
 $$
 \begin{aligned}
 \text{Percentage Increase} &= \frac{\text{Increase Amount}}{\text{Original Value}} \times 100\% \\\\
@@ -21,20 +7,19 @@ $$
 $$
 
 **Explanation**  
-Percentage increase is a special case of percentage change when the value grows.  
-It compares the increase amount to the original value.  
-
-**Where:**
+Percentage change measures the relative difference between a new value and an old value.  
+- Positive result → increase  
+- Negative result → decrease  
 
 ---
 ### Sales Price given Cost and Margin
+
 $$
 \text{Price} = \frac{\text{Cost}}{1 - \text{Margin}}
 $$
 
 **Explanation**  
-- Margin is expressed as a decimal (e.g., 30% → 0.30).  
-- This formula “grosses up” cost to the selling price, ensuring the margin is preserved.  
+Margin is expressed as a decimal (e.g., 30% → 0.30).  This formula “grosses up” cost to the selling price, ensuring the margin is preserved.  
 
 **Example:** Cost = $70, Margin = 0.30  
 
@@ -42,7 +27,7 @@ $$
 \text{Price} = \frac{70}{1 - 0.30} = \frac{70}{0.70} = 100""")
 $$
 
-# Cost given Price and Margin
+---
 ### Cost given Price and Margin
 $$
 \text{Cost} = \text{Price} \times (1 - \text{Margin})
