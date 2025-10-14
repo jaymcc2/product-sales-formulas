@@ -10,7 +10,7 @@
     $$
     \begin{aligned}
     \text{Percentage Increase} &= \frac{\text{Increase Amount}}{\text{Original Value}} \times 100\% \\
-    {\small \text{Increase Amount} = \text{New Value} - \text{Original Value}}
+    \text{Increase Amount} &= \text{New Value} - \text{Original Value}
     \end{aligned}
     $$
   explanation: "Percentage increase is a special case of percentage change when the value grows. It compares the increase amount to the original value."
