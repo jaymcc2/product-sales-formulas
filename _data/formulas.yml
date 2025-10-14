@@ -103,10 +103,10 @@
   explanation: Dividing inserts by inserts by time (NEED TO REVIEW)
   examples:
     - example: |
-      - $I_p$ = inserts used per part (expected, real-valued)  
-      - $z$ = number of teeth (inserts mounted in cutter body)  
-      - $z_i$ = number of usable edges per insert  
-      - $T$ = tool life (parts per insert change)                      
+        - $I_p$ = inserts used per part (expected, real-valued)  
+        - $z$ = number of teeth (inserts mounted in cutter body)  
+        - $z_i$ = number of usable edges per insert  
+        - $T$ = tool life (parts per insert change)                      
       This formula calculates the expected number of inserts used per part based on tool geometry and life.  
       example-equation: |
         Variables
