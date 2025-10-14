@@ -1,21 +1,44 @@
-- title: Percentage Change
+# Available categories:
+# - basic math
+# - margin
+# - pricing
+
+# Available tags:
+# - percentage
+# - change
+# - comparison
+# - increase
+# - growth
+# - price
+# - cost
+# - margin
+# - selling price
+# - profit
+# - discount
+# - list price
+# - distributor
+# - customer
+# - insert
+# - usage
+# - tool
+# - manufacturing
+
+# Percentage change formula
+- id: percentage-change
+  title: Percentage Change
+  categories: [basic math]
+  tags: [price, cost, change]
   equation: |
     $$
     \text{Percentage Change} = \frac{\text{New Value} - \text{Old Value}}{\text{Old Value}} \times 100\%
     $$
   explanation: "Percentage change measures the relative difference between a new value and an old value. Positive result → increase, negative result → decrease."
 
-- title: Percentage Increase
-  equation: |
-    $$
-    \begin{aligned}
-    \text{Percentage Increase} &= \frac{\text{Increase Amount}}{\text{Original Value}} \times 100\% \\
-    \text{Increase Amount} &= \text{New Value} - \text{Original Value}
-    \end{aligned}
-    $$
-  explanation: "Percentage increase is a special case of percentage change when the value grows. It compares the increase amount to the original value."
-
-- title: Sales Price given Cost and Margin
+# Sales price given cost and margin
+- id: sales-price-given-cost-and-margin
+  title: Sales Price given Cost and Margin
+  categories: [margin, pricing]
+  tags: [profit, cost, margin]
   equation: |
     $$
     \text{Price} = \frac{\text{Cost}}{1 - \text{Margin}}
@@ -26,7 +49,12 @@
     $$
     \text{Price} = \frac{70}{1 - 0.30} = \frac{70}{0.70} = 100
     $$
-- title: Cost given Price and Margin
+
+# Item cost given price and margin
+- id: cost-given-price-and-margin
+  title: Cost given Price and Margin
+  categories: [margin, pricing]
+  tags: [profit, cost, margin]
   equation: |
     $$
     \text{Cost} = \text{Price} \times (1 - \text{Margin})
@@ -37,30 +65,12 @@
     $$
     \text{Cost} = 100 \times (1 - 0.30) = 100 \times 0.70 = 70
     $$
-- title: Margin given Cost and Price
-  equation: |
-    $$
-    \text{Margin} = 1 - \frac{\text{Cost}}{\text{Price}}
-    $$
-  explanation: "This formula derives margin from cost and price by comparing the profit (price - cost) to the price."
-  example: "Price = $100, Cost = $70  → Margin = 0.30"
-  example-equation: |
-    $$
-    \text{Margin} = 1 - \frac{70}{100} = 1 - 0.70 = 0.30
-    $$
-- title: Discount given Cost and Price
-  equation: |
-    $$
-    \text{Discount} = 1 - \frac{\text{Price}}{\text{List Price}}
-    $$
-  explanation: "Discount is the percentage reduction from list price.  (If you only have cost & net price, discount can be derived from the assumed list price.) "
-  example: "List Price = $120, Price = $100  → Discount = 0.1667 (16.67%)"
-  example-equation: |
-    $$
-    \text{Discount} = 1 - \frac{100}{120} = 1 - 0.8333 = 0.1667
-    $$
 
-- title: Margin with Distributor vs. Customer Discount
+# Margin given selling price and cost
+- id: distributor-margin-customer-price-distributor-price
+  title: Distributor margin given Customer price and Distributor Price
+  categories: [margin, pricing]
+  tags: [profit, cost, margin]
   equation: |
     $$
     \text{Distributor Margin} =
@@ -76,22 +86,27 @@
     \text{Distributor Margin} = \frac{80 - 60}{80} = 0.25 \; (25\%)
     $$
 
-- title: Insert Usage per Part
-  equation: |
+# Insert Usage per part
+- id: insert-usage-per-part
+  title: Insert Usage per Part
+  categories: [shop math, tooling, cost savings]
+  equation: 
     $$
-    \text{Inserts\_needed}(N) = \left\lceil \frac{z}{z_i} \cdot \frac{N}{T} \right\rceil
+    I_p \;=\; \frac{\dfrac{z}{z_i}}{T} \;=\; \frac{z}{z_i\,T}
     $$
-  explanation: |
-    "This formula calculates the expected number of inserts used per part based on tool geometry and life.  Variables:
+  explanation: Dividing inserts by inserts by time (NEED TO REVIEW)
+  example: |
     - $I_p$ = inserts used per part (expected, real-valued)  
     - $z$ = number of teeth (inserts mounted in cutter body)  
     - $z_i$ = number of usable edges per insert  
-    - $T$ = tool life (parts per insert change)
-  example: |
-    - List Price = $100  
-    - Distributor Discount = 40% → Distributor Price = $60  
-    - Customer Discount = 20% → Customer Price = $80 
+    - $T$ = tool life (parts per insert change)                      
+    This formula calculates the expected number of inserts used per part based on tool geometry and life.  
   example-equation: |
+    Variables
+    $$
+    \text{Inserts\_needed}(N) = \left\lceil \frac{z}{z_i} \cdot \frac{N}{T} \right\rceil
+    $$                  
+    
     $$
     \begin{aligned}
     z &= 6,\quad z_i = 2,\quad T = 100 \\
@@ -99,4 +114,4 @@
     \text{Inserts\_consumed}(1000) &= 0.03 \times 1000 = 30 \\
     \text{Inserts\_needed}(1000) &= \left\lceil 30 \right\rceil = 30
     \end{aligned}
-    $$
+    $$                                                
