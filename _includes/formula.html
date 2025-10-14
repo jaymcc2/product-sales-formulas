@@ -6,14 +6,20 @@
     {% if include.formula.explanation %}
     <div class="formula-explanation">{{ include.formula.explanation }}</div>
     {% endif %}
-    {% if include.formula.example %}
+    {% if include.formula.examples %}
+    
     <div class="block">
-        <div class="formula-example"><strong>Example:</strong> {{ include.formula.example | markdownify }}</div>
-        {% if include.formula.example-equation %}
+        {% for ex in include.formula.examples %}
+        <div class="formula-example">
+            <strong>Example:</strong> 
+            {{ ex.example | markdownify }}
+        </div>
+        {% if ex.example-equation %}
         <div class="formula-example-equation">
-            {{ include.formula.example-equation }}
+            {{ ex.example-equation | markdownify }}
         </div>
         {% endif %}
+        {% endfor %}
     </div> 
     {% endif %}
     <hr>

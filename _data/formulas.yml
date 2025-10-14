@@ -47,11 +47,12 @@
     \text{Price} = \frac{\text{Cost}}{1 - \text{Margin}}
     $$
   explanation: "Margin is expressed as a decimal (e.g., 30% → 0.30). This formula grosses up cost to the selling price, ensuring the margin is preserved."
-  example: "Cost = $70, Margin = 0.30 → Price = $100"
-  example-equation: |
-    $$
-    \text{Price} = \frac{70}{1 - 0.30} = \frac{70}{0.70} = 100
-    $$
+  examples:
+    - example: "Cost = $70, Margin = 0.30 → Price = $100"
+      example-equation: |
+      $$
+      \text{Price} = \frac{70}{1 - 0.30} = \frac{70}{0.70} = 100
+      $$
 
 # Item cost given price and margin
 - id: cost-given-price-and-margin
@@ -63,11 +64,12 @@
     \text{Cost} = \text{Price} \times (1 - \text{Margin})
     $$
   explanation: "Rearranging the price formula allows cost to be derived from price and margin.  "
-  example: "Price = $100, Margin = 0.30  → Cost = $70"
-  example-equation: |
-    $$
-    \text{Cost} = 100 \times (1 - 0.30) = 100 \times 0.70 = 70
-    $$
+  examples:
+    - example: "Price = $100, Margin = 0.30  → Cost = $70"
+      example-equation: |
+        $$
+        \text{Cost} = 100 \times (1 - 0.30) = 100 \times 0.70 = 70
+        $$
 
 # Margin given selling price and cost
 - id: distributor-margin-customer-price-distributor-price
@@ -80,14 +82,15 @@
     \frac{\text{Customer Price} - \text{Distributor Price}}{\text{Customer Price}}
     $$
   explanation: "When both distributor and customer discounts apply, the distributor's margin is determined by the gap between the two net prices:  Distributor Price = List Price × (1 − Distributor Discount)  Customer Price = List Price × (1 − Customer Discount)  "
-  example: |
-    - List Price = $100  
-    - Distributor Discount = 40% → Distributor Price = $60  
-    - Customer Discount = 20% → Customer Price = $80 
-  example-equation: |
-    $$
-    \text{Distributor Margin} = \frac{80 - 60}{80} = 0.25 \; (25\%)
-    $$
+  examples:
+    - example: |
+      - List Price = $100  
+      - Distributor Discount = 40% → Distributor Price = $60  
+      - Customer Discount = 20% → Customer Price = $80 
+      example-equation: |
+        $$
+        \text{Distributor Margin} = \frac{80 - 60}{80} = 0.25 \; (25\%)
+        $$
 
 # Insert Usage per part
 - id: insert-usage-per-part
@@ -98,23 +101,24 @@
     I_p \;=\; \frac{\dfrac{z}{z_i}}{T} \;=\; \frac{z}{z_i\,T}
     $$
   explanation: Dividing inserts by inserts by time (NEED TO REVIEW)
-  example: |
-    - $I_p$ = inserts used per part (expected, real-valued)  
-    - $z$ = number of teeth (inserts mounted in cutter body)  
-    - $z_i$ = number of usable edges per insert  
-    - $T$ = tool life (parts per insert change)                      
-    This formula calculates the expected number of inserts used per part based on tool geometry and life.  
-  example-equation: |
-    Variables
-    $$
-    \text{Inserts\_needed}(N) = \left\lceil \frac{z}{z_i} \cdot \frac{N}{T} \right\rceil
-    $$                  
-    
-    $$
-    \begin{aligned}
-    z &= 6,\quad z_i = 2,\quad T = 100 \\
-    I_p &= \frac{6}{2\cdot 100} = 0.03\ \text{inserts/part} \\
-    \text{Inserts\_consumed}(1000) &= 0.03 \times 1000 = 30 \\
-    \text{Inserts\_needed}(1000) &= \left\lceil 30 \right\rceil = 30
-    \end{aligned}
-    $$                                                
+  examples:
+    - example: |
+      - $I_p$ = inserts used per part (expected, real-valued)  
+      - $z$ = number of teeth (inserts mounted in cutter body)  
+      - $z_i$ = number of usable edges per insert  
+      - $T$ = tool life (parts per insert change)                      
+      This formula calculates the expected number of inserts used per part based on tool geometry and life.  
+      example-equation: |
+        Variables
+        $$
+        \text{Inserts\_needed}(N) = \left\lceil \frac{z}{z_i} \cdot \frac{N}{T} \right\rceil
+        $$                  
+        
+        $$
+        \begin{aligned}
+        z &= 6,\quad z_i = 2,\quad T = 100 \\
+        I_p &= \frac{6}{2\cdot 100} = 0.03\ \text{inserts/part} \\
+        \text{Inserts\_consumed}(1000) &= 0.03 \times 1000 = 30 \\
+        \text{Inserts\_needed}(1000) &= \left\lceil 30 \right\rceil = 30
+        \end{aligned}
+        $$                                                
