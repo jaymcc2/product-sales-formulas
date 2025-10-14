@@ -6,11 +6,9 @@
     <div class="formula-variables">
         <strong>Variables:</strong>
         {% if include.formula.variables %}
-        <ul class="formula-variables-list">
             {% for variable in include.formula.variables %}
-                <li>{{ variable[0] }} - {{ variable[1] }}</li>
+                <div>{{ variable }}</div>
             {% endfor %}
-        </ul>
         {% endif %}
     </div>
     {% if include.formula.comment %}

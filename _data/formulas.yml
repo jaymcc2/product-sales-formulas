@@ -102,7 +102,7 @@
   title: Insert Usage per Part
   categories: [shop math, tooling, cost savings]
   tags: [insert, usage, tool, manufacturing]
-  variables: 
+  variables: |
     inserts: $I_p$ inserts used per part (expected, real-valued)
     teeth: $z$ number of teeth (inserts mounted in cutter body)
     usable_edges: $z_i$ number of usable edges per insert
