@@ -5,10 +5,10 @@
     </div>
     <div class="formula-variables">
         <strong>Variables:</strong>
-        {% if formula.variables %}
+        {% if include.formula.variables %}
         <ul class="formula-variables-list">
-            {% for key in formula.variables %}
-                <li>--key start-- {{ key }} --key end-- --value start--{{ formula.variables[key] | markdownify }} --value end--</li>
+            {% for key in include.formula.variables %}
+                <li>KEY {{ key }} VALUE {{ include.formula.variables[key] | markdownify }}</li>
             {% endfor %}
         </ul>
         {% endif %}
