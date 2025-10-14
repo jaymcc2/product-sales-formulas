@@ -84,9 +84,9 @@
   explanation: "When both distributor and customer discounts apply, the distributor's margin is determined by the gap between the two net prices:  Distributor Price = List Price × (1 − Distributor Discount)  Customer Price = List Price × (1 − Customer Discount)  "
   examples:
     - example: |
-      - List Price = $100  
-      - Distributor Discount = 40% → Distributor Price = $60  
-      - Customer Discount = 20% → Customer Price = $80 
+        - List Price = $100  
+        - Distributor Discount = 40% → Distributor Price = $60  
+        - Customer Discount = 20% → Customer Price = $80 
       example-equation: |
         $$
         \text{Distributor Margin} = \frac{80 - 60}{80} = 0.25 \; (25\%)
