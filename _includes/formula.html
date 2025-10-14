@@ -6,11 +6,9 @@
     <div class="formula-variables">
         <strong>Variables:</strong>
         {% if formula.variables %}
-        <ul>
-            {% for v in formula.variables %}
-            {% for key in v %}
-                <li>{{ v[key] | markdownify }}</li>
-            {% endfor %}
+        <ul class="formula-variables-list">
+            {% for variable in formula.variables %}
+                <li>{{ variable | markdownify }}</li>
             {% endfor %}
         </ul>
         {% endif %}
