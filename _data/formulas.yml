@@ -35,7 +35,7 @@
     $$
     \text{Percentage Change} = \frac{\text{New Value} - \text{Old Value}}{\text{Old Value}} \times 100\%
     $$
-  explanation: "Percentage change measures the relative difference between a new value and an old value. Positive result → increase, negative result → decrease."
+  comment: "Percentage change measures the relative difference between a new value and an old value. Positive result → increase, negative result → decrease."
 
 # Sales price given cost and margin
 - id: sales-price-given-cost-and-margin
@@ -46,7 +46,7 @@
     $$
     \text{Price} = \frac{\text{Cost}}{1 - \text{Margin}}
     $$
-  explanation: "Margin is expressed as a decimal (e.g., 30% → 0.30). This formula grosses up cost to the selling price, ensuring the margin is preserved."
+  comment: "Margin is expressed as a decimal (e.g., 30% → 0.30). This formula grosses up cost to the selling price, ensuring the margin is preserved."
   examples:
     - example: "Cost = $70, Margin = 0.30 → Price = $100"
       example-equation: |
@@ -63,7 +63,7 @@
     $$
     \text{Cost} = \text{Price} \times (1 - \text{Margin})
     $$
-  explanation: "Rearranging the price formula allows cost to be derived from price and margin.  "
+  comment: "Rearranging the price formula allows cost to be derived from price and margin.  "
   examples:
     - example: "Price = $100, Margin = 0.30  → Cost = $70"
       example-equation: |
@@ -81,7 +81,7 @@
     \text{Distributor Margin} =
     \frac{\text{Customer Price} - \text{Distributor Price}}{\text{Customer Price}}
     $$
-  explanation: "When both distributor and customer discounts apply, the distributor's margin is determined by the gap between the two net prices:  Distributor Price = List Price × (1 − Distributor Discount)  Customer Price = List Price × (1 − Customer Discount)  "
+  comment: "When both distributor and customer discounts apply, the distributor's margin is determined by the gap between the two net prices:  Distributor Price = List Price × (1 − Distributor Discount)  Customer Price = List Price × (1 − Customer Discount)  "
   examples:
     - example: |
         - List Price = $100  
@@ -100,7 +100,7 @@
     $$
     I_p \;=\; \frac{\dfrac{z}{z_i}}{T} \;=\; \frac{z}{z_i\,T}
     $$
-  explanation: Dividing inserts by inserts by time (NEED TO REVIEW)
+  comment: Dividing inserts by inserts by time (NEED TO REVIEW)
   examples:
     - example: |
         - $I_p$ = inserts used per part (expected, real-valued)  
