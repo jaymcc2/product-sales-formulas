@@ -6,7 +6,7 @@ title: Sales Math
 
 {% for formula in site.data.formulas %}
 
-	{% include formula.html formula=formula %}
+{% include formula.html formula=formula %}
 
 {% endfor %}
 
