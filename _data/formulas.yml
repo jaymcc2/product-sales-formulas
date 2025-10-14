@@ -107,7 +107,7 @@
         - $z$ = number of teeth (inserts mounted in cutter body)  
         - $z_i$ = number of usable edges per insert  
         - $T$ = tool life (parts per insert change)                      
-      This formula calculates the expected number of inserts used per part based on tool geometry and life.  
+        This formula calculates the expected number of inserts used per part based on tool geometry and life.  
       example-equation: |
         Variables
         $$
@@ -121,4 +121,4 @@
         \text{Inserts\_consumed}(1000) &= 0.03 \times 1000 = 30 \\
         \text{Inserts\_needed}(1000) &= \left\lceil 30 \right\rceil = 30
         \end{aligned}
-        $$                                                
+        $$
