@@ -3,11 +3,13 @@ layout: default
 title: Sales Math
 ---
 
+
 {% for formula in site.data.formulas %}
 
 	{% include formula.html formula=formula %}
 
 {% endfor %}
+
 
 ---
 **Explanation Gogo**  
