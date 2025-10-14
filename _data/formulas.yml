@@ -48,7 +48,7 @@
     $$
   comment: "Margin is expressed as a decimal (e.g., 30% → 0.30). This formula grosses up cost to the selling price, ensuring the margin is preserved."
   examples:
-    - example: "Cost = $70, Margin = 0.30 → Price = $100"
+    - example-comment: "Cost = $70, Margin = 0.30 → Price = $100"
       example-equation: |
         $$
         \text{Price} = \frac{70}{1 - 0.30} = \frac{70}{0.70} = 100
@@ -65,10 +65,15 @@
     $$
   comment: "Rearranging the price formula allows cost to be derived from price and margin.  "
   examples:
-    - example: "Price = $100, Margin = 0.30  → Cost = $70"
+    - example-comment: "Price = $100, Margin = 0.30  → Cost = $70"
       example-equation: |
         $$
         \text{Cost} = 100 \times (1 - 0.30) = 100 \times 0.70 = 70
+        $$  
+    - example-comment: "Price = $120, Margin = 0.30  → Cost = $84"
+      example-equation: |
+        $$
+        \text{Cost} = 120 \times (1 - 0.30) = 100 \times 0.70 = 84
         $$
 
 # Margin given selling price and cost
@@ -83,7 +88,7 @@
     $$
   comment: "When both distributor and customer discounts apply, the distributor's margin is determined by the gap between the two net prices:  Distributor Price = List Price × (1 − Distributor Discount)  Customer Price = List Price × (1 − Customer Discount)  "
   examples:
-    - example: |
+    - example-comment: |
         - List Price = $100  
         - Distributor Discount = 40% → Distributor Price = $60  
         - Customer Discount = 20% → Customer Price = $80 
@@ -102,7 +107,7 @@
     $$
   comment: Dividing inserts by inserts by time (NEED TO REVIEW)
   examples:
-    - example: |
+    - example-comment: |
         - $I_p$ = inserts used per part (expected, real-valued)  
         - $z$ = number of teeth (inserts mounted in cutter body)  
         - $z_i$ = number of usable edges per insert  

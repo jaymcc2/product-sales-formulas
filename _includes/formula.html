@@ -12,7 +12,7 @@
         {% for ex in include.formula.examples %}
         <div class="formula-example">
             <strong>Example:</strong> 
-            {{ ex.example | markdownify }}
+            {{ ex.example-comment | markdownify }}
         </div>
         {% if ex.example-equation %}
         <div class="formula-example-equation">
