@@ -26,6 +26,9 @@ $$
 st.latex(r"""\text{Margin} = \frac{100 - 70}{100} = 0.30 \; (30\%)""")
 $$
 
+
+
+
 # Discount given Cost and Price
 ### Discount given Cost and Price
 $$

@@ -37,3 +37,66 @@
     $$
     \text{Cost} = 100 \times (1 - 0.30) = 100 \times 0.70 = 70
     $$
+- title: Margin given Cost and Price
+  equation: |
+    $$
+    \text{Margin} = 1 - \frac{\text{Cost}}{\text{Price}}
+    $$
+  explanation: "This formula derives margin from cost and price by comparing the profit (price - cost) to the price."
+  example: "Price = $100, Cost = $70  → Margin = 0.30"
+  example-equation: |
+    $$
+    \text{Margin} = 1 - \frac{70}{100} = 1 - 0.70 = 0.30
+    $$
+- title: Discount given Cost and Price
+  equation: |
+    $$
+    \text{Discount} = 1 - \frac{\text{Price}}{\text{List Price}}
+    $$
+  explanation: "Discount is the percentage reduction from list price.  (If you only have cost & net price, discount can be derived from the assumed list price.) "
+  example: "List Price = $120, Price = $100  → Discount = 0.1667 (16.67%)"
+  example-equation: |
+    $$
+    \text{Discount} = 1 - \frac{100}{120} = 1 - 0.8333 = 0.1667
+    $$
+
+- title: Margin with Distributor vs. Customer Discount
+  equation: |
+    $$
+    \text{Distributor Margin} =
+    \frac{\text{Customer Price} - \text{Distributor Price}}{\text{Customer Price}}
+    $$
+  explanation: "When both distributor and customer discounts apply, the distributor's margin is determined by the gap between the two net prices:  Distributor Price = List Price × (1 − Distributor Discount)  Customer Price = List Price × (1 − Customer Discount)  "
+  example: |
+    - List Price = $100  
+    - Distributor Discount = 40% → Distributor Price = $60  
+    - Customer Discount = 20% → Customer Price = $80 
+  example-equation: |
+    $$
+    \text{Distributor Margin} = \frac{80 - 60}{80} = 0.25 \; (25\%)
+    $$
+
+- title: Insert Usage per Part
+  equation: |
+    $$
+    \text{Inserts\_needed}(N) = \left\lceil \frac{z}{z_i} \cdot \frac{N}{T} \right\rceil
+    $$
+  explanation: |
+    "This formula calculates the expected number of inserts used per part based on tool geometry and life.  Variables:
+    - $I_p$ = inserts used per part (expected, real-valued)  
+    - $z$ = number of teeth (inserts mounted in cutter body)  
+    - $z_i$ = number of usable edges per insert  
+    - $T$ = tool life (parts per insert change)
+  example: |
+    - List Price = $100  
+    - Distributor Discount = 40% → Distributor Price = $60  
+    - Customer Discount = 20% → Customer Price = $80 
+  example-equation: |
+    $$
+    \begin{aligned}
+    z &= 6,\quad z_i = 2,\quad T = 100 \\
+    I_p &= \frac{6}{2\cdot 100} = 0.03\ \text{inserts/part} \\
+    \text{Inserts\_consumed}(1000) &= 0.03 \times 1000 = 30 \\
+    \text{Inserts\_needed}(1000) &= \left\lceil 30 \right\rceil = 30
+    \end{aligned}
+    $$
