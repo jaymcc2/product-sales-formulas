@@ -3,6 +3,18 @@
     <div class="formula-equation">
         {{ include.formula.equation }}
     </div>
+    <div class="formula-variables">
+        <strong>Variables:</strong>
+        {% if formula.variables %}
+        <ul>
+            {% for v in formula.variables %}
+            {% for key in v %}
+                <li>{{ v[key] | markdownify }}</li>
+            {% endfor %}
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
     {% if include.formula.comment %}
     <div class="formula-comment">{{ include.formula.comment }}</div>
     {% endif %}
