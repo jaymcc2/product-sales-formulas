@@ -7,6 +7,8 @@ title: Sales Math
 	{% include formula.html formula=formula %}
 {% endfor %}
 
+
+---
 **Explanation**  
 Margin is expressed as a decimal (e.g., 30% → 0.30).  This formula “grosses up” cost to the selling price, ensuring the margin is preserved.  
 
