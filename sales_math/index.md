@@ -11,30 +11,6 @@ title: Sales Math
 {% endfor %}
 
 
----
-**Explanation Gogo**  
-Margin is expressed as a decimal (e.g., 30% → 0.30).  This formula “grosses up” cost to the selling price, ensuring the margin is preserved.  
-
-**Example:** Cost = $70, Margin = 0.30  
-
-$$
-\text{Price} = \frac{70}{1 - 0.30} = \frac{70}{0.70} = 100""")
-$$
-
----
-### Cost given Price and Margin
-$$
-\text{Cost} = \text{Price} \times (1 - \text{Margin})
-$$
-
-**Explanation**  
-Rearranging the price formula allows cost to be derived from price and margin.  
-
-**Example:** Price = $100, Margin = 0.30  
-
-$$
-\text{Cost} = 100 \times (1 - 0.30) = 70
-$$
 
 # Margin given Cost and Price
 ### Margin given Cost and Price

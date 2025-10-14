@@ -7,10 +7,12 @@
     <div class="formula-explanation">{{ include.formula.explanation }}</div>
     {% endif %}
     {% if include.formula.example %}
-    <div class="formula-example"><strong>Example:</strong> {{ include.formula.example }}</div>
-    {% endif %}
-    {% if include.formula.example-equation %}
-    <div class="formula-example-equation">{{ include.formula.example-equation }}</div>
+    <div class="block">
+        <div class="formula-example"><strong>Example:</strong> {{ include.formula.example }}</div>
+        {% if include.formula.example-equation %}
+        <div class="formula-example-equation">{{ include.formula.example-equation }}</div>
+        {% endif %}
+    </div> 
     {% endif %}
     <hr>
 </div>

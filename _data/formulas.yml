@@ -26,3 +26,14 @@
     $$
     \text{Price} = \frac{70}{1 - 0.30} = \frac{70}{0.70} = 100
     $$
+- title: Cost given Price and Margin
+  equation: |
+    $$
+    \text{Cost} = \text{Price} \times (1 - \text{Margin})
+    $$
+  explanation: "Rearranging the price formula allows cost to be derived from price and margin.  "
+  example: "Price = $100, Margin = 0.30  → Cost = $70"
+  example-equation: |
+    $$
+    \text{Cost} = 100 \times (1 - 0.30) = 100 \times 0.70 = 70
+    $$
