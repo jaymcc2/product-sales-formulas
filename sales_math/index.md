@@ -1,4 +1,4 @@
-### Percentage Increase### Percentage Change
+### Percentage Change
 $$
 \begin{aligned}
 \text{Percentage Increase} &= \frac{\text{Increase Amount}}{\text{Original Value}} \times 100\% \\\\
@@ -8,8 +8,8 @@ $$
 
 **Explanation**  
 Percentage change measures the relative difference between a new value and an old value.  
-- Positive result → increase  
-- Negative result → decrease  
+Positive result → increase  
+Negative result → decrease  
 
 ---
 ### Sales Price given Cost and Margin
