@@ -3,12 +3,12 @@
     <div class="formula-equation">
         {{ include.formula.equation }}
     </div>
-    <div class="formula-variables">
-        <strong>Variables:</strong>
-        {% if include.formula.variables %}
-            <div>{{ include.formula.variables }}</div>
-        {% endif %}
-    </div>
+    {% if include.formula.variables %}
+        <div class="formula-variables">
+            <strong>Variables:</strong>
+            <div>{{ include.formula.variables | markdownify }}</div>
+        </div>
+    {% endif %}
     {% if include.formula.comment %}
     <div class="formula-comment">{{ include.formula.comment }}</div>
     {% endif %}
