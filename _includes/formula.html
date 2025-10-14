@@ -8,7 +8,7 @@
         {% if formula.variables %}
         <ul class="formula-variables-list">
             {% for key in formula.variables %}
-                <li>{{ key }}: {{ formula.variables[key] | markdownify }}</li>
+                <li>--key start-- {{ key }} --key end-- --value start--{{ formula.variables[key] | markdownify }} --value end--</li>
             {% endfor %}
         </ul>
         {% endif %}
