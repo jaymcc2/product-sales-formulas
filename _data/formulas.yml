@@ -50,9 +50,9 @@
   examples:
     - example: "Cost = $70, Margin = 0.30 → Price = $100"
       example-equation: |
-      $$
-      \text{Price} = \frac{70}{1 - 0.30} = \frac{70}{0.70} = 100
-      $$
+        $$
+        \text{Price} = \frac{70}{1 - 0.30} = \frac{70}{0.70} = 100
+        $$
 
 # Item cost given price and margin
 - id: cost-given-price-and-margin
