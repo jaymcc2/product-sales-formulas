@@ -21,3 +21,8 @@
     \text{Price} = \frac{\text{Cost}}{1 - \text{Margin}}
     $$
   explanation: "Margin is expressed as a decimal (e.g., 30% → 0.30). This formula grosses up cost to the selling price, ensuring the margin is preserved."
+  example: "Cost = $70, Margin = 0.30 → Price = $100"
+  example-equation: |
+    $$
+    \text{Price} = \frac{70}{1 - 0.30} = \frac{70}{0.70} = 100
+    $$
