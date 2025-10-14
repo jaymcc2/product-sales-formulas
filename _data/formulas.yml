@@ -1,0 +1,23 @@
+- title: Percentage Change
+  equation: |
+    $$
+    \text{Percentage Change} = \frac{\text{New Value} - \text{Old Value}}{\text{Old Value}} \times 100\%
+    $$
+  explanation: "Percentage change measures the relative difference between a new value and an old value. Positive result → increase, negative result → decrease."
+
+- title: Percentage Increase
+  equation: |
+    $$
+    \begin{aligned}
+    \text{Percentage Increase} &= \frac{\text{Increase Amount}}{\text{Original Value}} \times 100\% \\
+    {\small \text{Increase Amount} = \text{New Value} - \text{Original Value}}
+    \end{aligned}
+    $$
+  explanation: "Percentage increase is a special case of percentage change when the value grows. It compares the increase amount to the original value."
+
+- title: Sales Price given Cost and Margin
+  equation: |
+    $$
+    \text{Price} = \frac{\text{Cost}}{1 - \text{Margin}}
+    $$
+  explanation: "Margin is expressed as a decimal (e.g., 30% → 0.30). This formula grosses up cost to the selling price, ensuring the margin is preserved."

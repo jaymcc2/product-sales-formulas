@@ -1,22 +1,11 @@
-### Percentage Change
-$$
-\begin{aligned}
-\text{Percentage Increase} &= \frac{\text{Increase Amount}}{\text{Original Value}} \times 100\% \\\\
-\text{Increase Amount} &= \text{New Value} - \text{Original Value}
-\end{aligned}
-$$
-
-**Explanation**  
-Percentage change measures the relative difference between a new value and an old value.  
-Positive result → increase  
-Negative result → decrease  
-
 ---
-### Sales Price given Cost and Margin
+layout: default
+title: Sales Math
+---
 
-$$
-\text{Price} = \frac{\text{Cost}}{1 - \text{Margin}}
-$$
+{% for formula in site.data.formulas %}
+	{% include formula.html formula=formula %}
+{% endfor %}
 
 **Explanation**  
 Margin is expressed as a decimal (e.g., 30% → 0.30).  This formula “grosses up” cost to the selling price, ensuring the margin is preserved.  

@@ -1,0 +1,9 @@
+<div class="formula-block">
+  <h3>{{ include.formula.title }}</h3>
+  <div class="formula-equation">
+    {{ include.formula.equation }}
+  </div>
+  {% if include.formula.explanation %}
+    <div class="formula-explanation">{{ include.formula.explanation }}</div>
+  {% endif %}
+</div>
