@@ -182,7 +182,7 @@
 - id: coefficient-of-variation
   title: Coefficient of Variation (CV)
   category: analysis math
-  tags: []
+  tags: [product, trends, variability, comparison]
   equation: |
     $$
     \text{Coefficient of Variation (CV)} = \frac{\sigma}{\mu} \times 100
@@ -208,7 +208,7 @@
 - id: range-to-mean-ratio
   title: Range to Mean Ratio (Range/Mean)
   category: [analysis math]
-  tags: []
+  tags: [product, trends, variability, comparison]
   equation: |
     $$
     \text{Range to Mean Ratio} = \frac{\text{Max} - \text{Min}}{\mu}
@@ -230,7 +230,32 @@
         \text{Range to Mean Ratio} = \frac{300 - 100}{200} = \frac{200}{200} = 1.0
         $$
 
-
+# Mean Absolute Deviation (MAD)
+- id: mean-absolute-deviation
+  title: Mean Absolute Deviation (MAD)
+  category: analysis math
+  tags: [product, trends, variability, comparison]
+  equation: |
+    $$
+    \text{Mean Absolute Deviation (MAD)} = \frac{\sum |x_i - \mu|}{n}
+    $$
+  variables:
+    $x_i$: each individual data point
+    $\mu$: mean of the data
+    $n$: number of data points
+  comment: |
+    The mean absolute deviation measures the average distance between each data point and the mean.
+    It provides a straightforward measure of variability that is less sensitive to extreme values than standard deviation.
+    - High MAD → more variability
+    - Low MAD → more stability
+  examples:
+    - example-comment: |
+        If a product has weekly sales data: [150, 200, 250, 300, 350] with mean $\mu$=250:
+        Interpretation: on average, weekly sales deviate from the mean by 70 units.
+      example-equation:
+        $$
+        \text{Mean Absolute Deviation (MAD)} = \frac{|150-250| + |200-250| + |250-250| + |300-250| + |350-250|}{5} = \frac{100 + 50 + 0 + 50 + 100}{5} = \frac{300}{5} = 60
+        $$  
 
 ######################### Shop Math Formulas ##################################
 
