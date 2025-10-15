@@ -274,7 +274,7 @@
     MAPE measures the average percentage error between actual and forecasted values.
     It provides insight into the accuracy of forecasts relative to the size of the actual values. 
   examples:
-    - example-comment: | |
+    - example-comment: |
         If actual sales are [100, 200, 300] and forecasted sales are [110, 190, 310]:
         Interpretation: on average, forecast errors are about 6.67% of actual sales.
       example-equation:
@@ -301,7 +301,7 @@
     - Lower RMSE → better forecast accuracy
     - Higher RMSE → larger forecast errors
   examples:
-    - example-comment: | |
+    - example-comment: |
         If actual sales are [100, 200, 300] and forecasted sales are [110, 190, 310]:
         Interpretation: on average, forecast errors are about 10.0 units.
       example-equation:
@@ -330,7 +330,7 @@
     - Negative bias → forecasts are generally too low
     - Zero bias → forecasts are unbiased on average
   examples:
-    - example-comment: | |
+    - example-comment: |
         If actual sales are [100, 200, 300] and forecasted sales are [110, 190, 310]:
         Interpretation: on average, forecasts are 3.33 units higher than actual sales.
       example-equation:
@@ -357,7 +357,7 @@
     - High negative value → significant under-forecasting
     - Value near zero → bias is small relative to forecast errors
   examples:
-    - example-comment: | |
+    - example-comment: |
         If forecast bias is 3.33 units and RMSE is 10.0 units:
         Interpretation: forecast bias is about 33.3% of the typical forecast error.
       example-equation:
