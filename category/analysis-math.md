@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Analysis Math
+permalink: /category/analysis-math/
 ---
 
 <h2>Analysis Math Formulas</h2>

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Shop Math
+permalink: /category/shop-math/
 ---
 
 <h2>Shop Math Formulas</h2>

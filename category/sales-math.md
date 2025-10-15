@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Sales Math
+permalink: /category/sales-math/
 ---
 
 <h2>Sales Math Formulas</h2>

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Basic Math
+permalink: /category/basic-math/
 ---
 
 <h2>Basic Math Formulas</h2>
