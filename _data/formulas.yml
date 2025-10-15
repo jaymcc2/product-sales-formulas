@@ -1,7 +1,7 @@
 # Example formula block for reference:
 # - id: example-formula
 #   title: Example Formula Title
-#   category: [category1, category2]
+#   category: category-name
 #   tags: [tag1, tag2]
 #   variables:
 #     - "$x$ description of variable x"
