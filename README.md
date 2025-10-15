@@ -22,7 +22,7 @@ This site is a resource for mathematical formulas and calculations relevant to m
 
 ## Ideas
 
-[Ideas](IDEAS.md)
+[Ideas](/ideas/)
 
 ## Usage
 
