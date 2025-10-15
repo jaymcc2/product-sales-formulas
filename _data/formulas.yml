@@ -103,10 +103,10 @@
   categories: [shop math, tooling, cost savings]
   tags: [insert, usage, tool, manufacturing]
   variables: 
-    - $$I_p$$ inserts used per part (expected, real-valued)
-    - $$z$$ number of teeth (inserts mounted in cutter body)
-    - $$z_i$$ number of usable edges per insert
-    - $$T$$ tool life (parts per insert change)
+    - "$I_p$ inserts used per part (expected, real-valued)"
+    - "$z$ number of teeth (inserts mounted in cutter body)"
+    - "$z_i$ number of usable edges per insert"
+    - "$T$ tool life (parts per insert change)"
   equation: 
     $$
     I_p \;=\; \frac{\dfrac{z}{z_i}}{T} \;=\; \frac{z}{z_i\,T}
