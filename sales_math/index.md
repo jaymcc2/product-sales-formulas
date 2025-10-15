@@ -12,3 +12,4 @@ The formulas below are useful for day-to-day sales calculations
 {% include formula.html formula=formula %}
 
 {% endfor %}
+
