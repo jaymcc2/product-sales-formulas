@@ -234,7 +234,7 @@
 - id: mean-absolute-deviation
   title: Mean Absolute Deviation (MAD)
   category: analysis math
-  tags: [product, trends, variability, comparison]
+  tags: [product, trends, forecast]
   equation: |
     $$
     \text{Mean Absolute Deviation (MAD)} = \frac{\sum |x_i - \mu|}{n}
@@ -261,7 +261,7 @@
 - id: mean-absolute-percentage-error
   title: Mean Absolute Percentage Error (MAPE)
   category: analysis math
-  tags: [product, trends, variability, comparison]
+  tags: [product, trends, forecast]
   equation: |
     $$
     \text{Mean Absolute Percentage Error (MAPE)} = \frac{1}{n} \sum \left| \frac{A_i - F_i}{A_i} \right| \times 100\%
@@ -273,12 +273,20 @@
   comment: |
     MAPE measures the average percentage error between actual and forecasted values.
     It provides insight into the accuracy of forecasts relative to the size of the actual values. 
+  examples:
+    - example-comment: | |
+        If actual sales are [100, 200, 300] and forecasted sales are [110, 190, 310]:
+        Interpretation: on average, forecast errors are about 6.67% of actual sales.
+      example-equation:
+        $$
+        \text{Mean Absolute Percentage Error (MAPE)} = \frac{\left| \frac{100-110}{100} \right| + \left| \frac{200-190}{200} \right| + \left| \frac{300-310}{300} \right|}{3} \times 100\% = \frac{0.10 + 0.05 + 0.0333}{3} \times 100\% \approx 6.67\%
+        $$
 
 # Root Mean Square Error (RMSE)
 - id: root-mean-square-error
   title: Root Mean Square Error (RMSE)
   category: analysis math
-  tags: [product, trends, variability, comparison]
+  tags: [product, trends, forecast]
   equation: |
     $$
     \text{Root Mean Square Error (RMSE)} = \sqrt{\frac{1}{n} \sum (A_i - F_i)^2}
@@ -292,6 +300,70 @@
     It provides insight into the accuracy of forecasts in the same units as the data.
     - Lower RMSE → better forecast accuracy
     - Higher RMSE → larger forecast errors
+  examples:
+    - example-comment: | |
+        If actual sales are [100, 200, 300] and forecasted sales are [110, 190, 310]:
+        Interpretation: on average, forecast errors are about 10.0 units.
+      example-equation:
+        $$
+        \text{Root Mean Square Error (RMSE)} = \sqrt{\frac{(100-110)^2 + (200-190)^2 + (300-310)^2}{3}} = \sqrt{\frac{100 + 100 + 100}{3}} = \sqrt{100} = 10.0
+        $$  
+
+# Forecast Bias
+- id: forecast-bias
+  title: Forecast Bias
+  category: analysis math
+  tags: [product, trends, forecast]
+  equation: |
+    $$
+    \text{Forecast Bias} = \frac{1}{n} \sum (F_i - A_i)
+    $$
+  variables:
+    $A_i$: actual value
+    $F_i$: forecasted value
+    $n$: number of data points
+  comment: |
+    Forecast bias measures the average difference between forecasted and actual values.
+    It indicates whether forecasts tend to overestimate (positive bias) or underestimate (negative bias)
+    actual outcomes.
+    - Positive bias → forecasts are generally too high
+    - Negative bias → forecasts are generally too low
+    - Zero bias → forecasts are unbiased on average
+  examples:
+    - example-comment: | |
+        If actual sales are [100, 200, 300] and forecasted sales are [110, 190, 310]:
+        Interpretation: on average, forecasts are 3.33 units higher than actual sales.
+      example-equation:
+        $$
+        \text{Forecast Bias} = \frac{(110-100) + (190-200) + (310-300)}{3} = \frac{10 - 10 + 10}{3} = \frac{10}{3} \approx 3.33
+        $$ 
+
+# Forecast Bias Significance
+- id: forecast-bias-significance
+  title: Forecast Bias Significance
+  category: analysis math
+  tags: [product, trends, forecast]
+  equation: |
+    $$
+    \text{Forecast Bias Significance} = \frac{\text{Forecast Bias}}{\text{RMSE}} \times 100\%
+    $$
+  variables:
+    $\text{Forecast Bias}$: average forecast bias
+    $\text{RMSE}$: root mean square error
+  comment: |
+    This metric assesses the significance of forecast bias relative to overall forecast accuracy (RMSE).
+    It helps determine if the bias is substantial compared to the typical size of forecast errors.
+    - High positive value → significant over-forecasting
+    - High negative value → significant under-forecasting
+    - Value near zero → bias is small relative to forecast errors
+  examples:
+    - example-comment: | |
+        If forecast bias is 3.33 units and RMSE is 10.0 units:
+        Interpretation: forecast bias is about 33.3% of the typical forecast error.
+      example-equation:
+        $$
+        \text{Forecast Bias Significance} = \frac{3.33}{10.0} \times 100\% \approx 33.3\%
+        $$
 
 ######################### Shop Math Formulas ##################################
 
