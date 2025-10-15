@@ -232,6 +232,37 @@
         \text{Weighted Moving Average (WMA)} = \frac{0.5 \cdot 350 + 0.3 \cdot 300 + 0.2 \cdot 250}{0.5 + 0.3 + 0.2} = \frac{175 + 90 + 50}{1.0} = 315
         $$
 
+# Exponential Moving Average (EMA)
+- id: exponential-moving-average
+  title: Exponential Moving Average (EMA)
+  category: analysis math
+  tags: [product, trends, forecast]
+  equation: |
+    $$
+    \text{EMA}_t = \alpha \cdot x_t + (1 - \alpha) \cdot \text{EMA}_{t-1}
+    $$
+  variables:
+    $x_t$: data point at time period $t$
+    $\text{EMA}_{t-1}$: EMA value at time period $t-1$
+    $\alpha$: smoothing factor (0 < $\alpha$ ≤ 1)
+  comment: |
+    The exponential moving average gives more weight to recent data points, making it more responsive to recent changes.
+    The smoothing factor $\alpha$ determines the rate at which older data points' influence decreases.
+    - Higher $\alpha$ → more responsive to recent changes
+    - Lower $\alpha$ → smoother, less responsive
+  examples:
+    - example-comment: |
+        If a product has weekly sales data: [150, 200, 250, 300, 350] and using a smoothing factor $\alpha$=0.5:
+        Interpretation: the EMA for week 5 is 325 units.
+      example-equation:
+        $$
+        \text{EMA}_1 = 150 \\
+        \text{EMA}_2 = 0.5 \cdot 200 + 0.5 \cdot 150 = 175 \\
+        \text{EMA}_3 = 0.5 \cdot 250 + 0.5 \cdot 175 = 212.5 \\
+        \text{EMA}_4 = 0.5 \cdot 300 + 0.5 \cdot 212.5 = 256.25 \\
+        \text{EMA}_5 = 0.5 \cdot 350 + 0.5 \cdot 256.25 = 303.125
+        $$  
+
 # Coefficient of Variation (CV)
 - id: coefficient-of-variation
   title: Coefficient of Variation (CV)
