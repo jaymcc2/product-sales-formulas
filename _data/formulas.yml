@@ -257,6 +257,42 @@
         \text{Mean Absolute Deviation (MAD)} = \frac{|150-250| + |200-250| + |250-250| + |300-250| + |350-250|}{5} = \frac{100 + 50 + 0 + 50 + 100}{5} = \frac{300}{5} = 60
         $$  
 
+# Mean Absolute Percentage Error (MAPE)
+- id: mean-absolute-percentage-error
+  title: Mean Absolute Percentage Error (MAPE)
+  category: analysis math
+  tags: [product, trends, variability, comparison]
+  equation: |
+    $$
+    \text{Mean Absolute Percentage Error (MAPE)} = \frac{1}{n} \sum \left| \frac{A_i - F_i}{A_i} \right| \times 100\%
+    $$
+  variables:
+    $A_i$: actual value
+    $F_i$: forecasted value
+    $n$: number of data points
+  comment: |
+    MAPE measures the average percentage error between actual and forecasted values.
+    It provides insight into the accuracy of forecasts relative to the size of the actual values. 
+
+# Root Mean Square Error (RMSE)
+- id: root-mean-square-error
+  title: Root Mean Square Error (RMSE)
+  category: analysis math
+  tags: [product, trends, variability, comparison]
+  equation: |
+    $$
+    \text{Root Mean Square Error (RMSE)} = \sqrt{\frac{1}{n} \sum (A_i - F_i)^2}
+    $$
+  variables:
+    $A_i$: actual value
+    $F_i$: forecasted value
+    $n$: number of data points
+  comment: |
+    RMSE measures the average magnitude of forecast errors, giving more weight to larger errors due to squaring.
+    It provides insight into the accuracy of forecasts in the same units as the data.
+    - Lower RMSE → better forecast accuracy
+    - Higher RMSE → larger forecast errors
+
 ######################### Shop Math Formulas ##################################
 
 # Insert Usage per part
