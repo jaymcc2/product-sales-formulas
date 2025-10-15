@@ -180,6 +180,7 @@
         $$
 
 ######################## Statistical Formulas #################################
+# Coefficient of Variation (CV)
 - id: coefficient-of-variation
   title: Coefficient of Variation (CV)
   categories: [statistics, forecast]
