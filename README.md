@@ -17,6 +17,9 @@ This site is a resource for mathematical formulas and calculations relevant to m
 - CNC speeds, feeds, and tooling math
 - Statistical analysis for manufacturing
 
+## Ideas
+[Ideas][IDEAS.md]
+
 ## Usage
 Browse formulas by category or search for specific topics. Each formula page provides definitions, equations, and practical examples to support your business and machining decisions.
 
