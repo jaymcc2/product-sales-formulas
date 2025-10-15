@@ -7,7 +7,7 @@
         <div class="formula-variables">
             <strong>Variables:</strong>
             {% for variable in include.formula.variables %}
-                <div>{{ variable | markdownify }}</div>
+                <div>{{ variable }}</div>
             {% endfor %}
         </div>
     {% endif %}
