@@ -365,6 +365,36 @@
         \text{Forecast Bias Significance} = \frac{3.33}{10.0} \times 100\% \approx 33.3\%
         $$
 
+# Forecast Bias Confidence Interval
+- id: forecast-bias-confidence-interval
+  title: Forecast Bias Confidence Interval
+  category: analysis math
+  tags: [product, trends, forecast]
+  equation: |
+    $$
+    \text{Confidence Interval} = \bar{x} \pm z \left( \frac{\sigma}{\sqrt{n}} \right)
+    $$
+  variables:
+    $\bar{x}$: forecast bias (mean of forecast errors)
+    $z$: Z-score for desired confidence level (e.g., 1.96 for 95% confidence)
+    $\sigma$: RMSE (standard deviation of forecast errors)
+    $n$: number of data points
+  comment: |
+    This formula calculates the confidence interval for forecast bias, providing a range within which the true bias
+    is likely to fall with a specified level of confidence.
+    It accounts for the variability in forecast errors (RMSE) and the sample size (n).
+  examples:
+    - example-comment: |
+        If forecast bias is 3.33 units, RMSE is 10.0 units, n=3, and using Z=1.96 for 95% confidence:
+        Interpretation: we are 95% confident the true forecast bias lies between -8.09 and 14.75 units.
+      example-equation:
+        $$
+        \text{Forecast Bias Confidence Interval} = 3.33 \pm 1.96 \times \frac{10.0}{\sqrt{3}} \approx 3.33 \pm 11.42
+        $$
+        $$
+        \text{Interval} \approx [-8.09, 14.75]
+        $$  
+
 ######################### Shop Math Formulas ##################################
 
 # Insert Usage per part
