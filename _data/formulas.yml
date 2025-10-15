@@ -1,7 +1,7 @@
 # Example formula block for reference:
 # - id: example-formula
 #   title: Example Formula Title
-#   categories: [category1, category2]
+#   category: [category1, category2]
 #   tags: [tag1, tag2]
 #   variables:
 #     - "$x$ description of variable x"
@@ -19,13 +19,11 @@
 #         $$
 #
 # Categories and tags help organize formulas for easy searching.
-# Available categories:
+# Available category:
 # - basic math
-# - margin
-# - pricing
+# - sales math
 # - shop math
-# - tooling
-# - cost savings
+# - analysis math
 
 # Available tags:
 # - percentage
@@ -50,7 +48,7 @@
 # Percentage change formula
 - id: percentage-change
   title: Percentage Change
-  categories: [basic math]
+  category: basic math
   tags: [price, cost, change]
   equation: |
     $$
@@ -79,7 +77,7 @@
 # Percentage difference formula
 - id: percentage-difference
   title: Percentage Difference
-  categories: [basic math]
+  category: basic math
   tags: [price, cost, comparison]
   equation: |
     $$
@@ -108,7 +106,7 @@
 # Gross profit formula
 - id: gross-profit
   title: Gross Profit
-  categories: [basic math, margin, pricing]
+  category: sales math
   tags: [price, cost, profit]
   equation: |
     $$
@@ -126,7 +124,7 @@
 # Sales price given cost and margin
 - id: sales-price-given-cost-and-margin
   title: Sales Price given Cost and Margin
-  categories: [margin, pricing]
+  category: sales math
   tags: [profit, cost, margin]
   equation: |
     $$
@@ -143,7 +141,7 @@
 # Item cost given price and margin
 - id: cost-given-price-and-margin
   title: Cost given Price and Margin
-  categories: [margin, pricing]
+  category: sales math
   tags: [profit, cost, margin]
   equation: |
     $$
@@ -160,7 +158,7 @@
 # Margin given selling price and cost
 - id: margin-given-price-and-cost
   title: Margin given Price and Cost
-  categories: [margin, pricing]
+  category: sales math
   tags: [profit, cost, margin]
   equation: |
     $$
@@ -183,7 +181,7 @@
 # Coefficient of Variation (CV)
 - id: coefficient-of-variation
   title: Coefficient of Variation (CV)
-  categories: [statistics, forecast]
+  category: analysis math
   tags: []
   equation: |
     $$
@@ -209,7 +207,7 @@
 # Range to Mean Ratio (Range/Mean)
 - id: range-to-mean-ratio
   title: Range to Mean Ratio (Range/Mean)
-  categories: [statistics, forecast]
+  category: [analysis math]
   tags: []
   equation: |
     $$
@@ -239,7 +237,7 @@
 # Insert Usage per part
 - id: insert-usage-per-part
   title: Insert Usage per Part
-  categories: [shop math, tooling, cost savings]
+  category: shop math
   tags: [insert, usage, tool, manufacturing]
   variables: 
     $I_p$: inserts used per part (expected, real-valued)

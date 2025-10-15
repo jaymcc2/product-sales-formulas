@@ -20,14 +20,7 @@ window.MathJax = {
 <body>
   <header class="hero-header">
     <div class="site-title">{{ site.title | default: "Product Sales Formulas" }}</div>
-    <nav class="top-menu">
-      <ul>
-  <li><a href="/">Home</a></li>
-  <li><a href="/formulas/">Formulas</a></li>
-  <li><a href="/sales_math/">Sales Math</a></li>
-  <li><a href="/about/">About</a></li>
-      </ul>
-    </nav>
+    {$ include menu.html $}
   </header>
   <div class="main-bg">
     <main class="main-content">
