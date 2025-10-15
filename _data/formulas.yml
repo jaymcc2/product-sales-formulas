@@ -104,6 +104,27 @@
         \text{Percentage Difference} = \frac{|60 - 80|}{\frac{|80| + |60|}{2}} \times 100\% = \frac{20}{70} \times 100\% \approx 28.57\%
         $$
 
+# Gross profit formula
+- id: gross-profit
+  title: Gross Profit
+  categories: [basic math, margin, pricing]
+  tags: [price, cost, profit]
+  equation: |
+    $$
+    \text{Gross Profit} = \text{Sales Price} - \text{Cost of Goods Sold}
+    $$
+  variables:
+    $Sales Price$: selling price (revenue)
+    $Cost of Goods Sold$: cost of goods sold
+  comment: "Gross profit is the financial gain obtained when the selling price exceeds the cost. \
+            It represents the amount of money earned after cost."
+  examples:
+    - example-comment: "Selling Price = $150, Cost = $100 → Gross Profit = $50"
+      example-equation: |
+        $$
+        \text{Gross Profit} = 150 - 100 = 50
+        $$
+
 # Sales price given cost and margin
 - id: sales-price-given-cost-and-margin
   title: Sales Price given Cost and Margin
