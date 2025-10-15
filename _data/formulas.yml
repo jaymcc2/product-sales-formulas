@@ -177,7 +177,61 @@
         \text{Distributor Margin} = \frac{80 - 60}{80} = 0.25 \; (25\%)
         $$
 
-######################## Statistical Formulas #################################
+######################## Analysis Formulas #################################
+
+# Moving Average (MA)
+- id: moving-average
+  title: Moving Average (MA)
+  category: analysis math
+  tags: [product, trends, forecast]
+  equation: |
+    $$
+    \text{Moving Average (MA)} = \frac{\sum_{i=0}^{n-1} x_{t-i}}{n}
+    $$
+  variables:
+    $x_{t-i}$: data point at time period $t-i$
+    $n$: number of periods in the moving average
+  comment: |
+    The moving average smooths out short-term fluctuations and highlights longer-term trends in data.
+    It is commonly used in sales forecasting to identify trends over a specified number of periods.
+    - Shorter MA (smaller n) → more responsive to recent changes, but more volatile
+    - Longer MA (larger n) → smoother, but slower to react to changes
+  examples:
+    - example-comment: |
+        If a product has weekly sales data: [150, 200, 250, 300, 350] and using a 3-week moving average:
+        Interpretation: the 3-week moving average for week 5 is 300 units.
+      example-equation:
+        $$
+        \text{Moving Average (MA)} = \frac{250 + 300 + 350}{3} = \frac{900}{3} = 300
+        $$
+
+# Weighted Moving Average (WMA)
+- id: weighted-moving-average
+  title: Weighted Moving Average (WMA)
+  category: analysis math
+  tags: [product, trends, forecast]
+  equation: |
+    $$
+    \text{Weighted Moving Average} = \sum_{i=0}^{n-1} w_i \cdot x_{t-i}
+    $$
+  variables:
+    $x_{t-i}$: data point at time period $t-i$
+    $w_i$: weight for data point at time period $t-i$ (where $\sum w_i = 1$)
+    $n$: number of periods in the weighted moving average
+  comment: |
+    The weighted moving average assigns different weights to data points, typically giving more importance to recent observations.
+    This allows the average to be more responsive to recent changes while still smoothing out fluctuations.
+    - Higher weights for recent data → more responsive to recent trends
+    - Weights should sum to 1 or be normalized
+  examples:
+    - example-comment: |
+        If a product has weekly sales data: [150, 200, 250, 300, 350] and using weights [0.5, 0.3, 0.2] for a 3-week weighted moving average:
+        Interpretation: the weighted moving average for week 5 is 305 units.
+      example-equation:
+        $$
+        \text{Weighted Moving Average (WMA)} = \frac{0.5 \cdot 350 + 0.3 \cdot 300 + 0.2 \cdot 250}{0.5 + 0.3 + 0.2} = \frac{175 + 90 + 50}{1.0} = 315
+        $$
+
 # Coefficient of Variation (CV)
 - id: coefficient-of-variation
   title: Coefficient of Variation (CV)
