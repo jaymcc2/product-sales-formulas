@@ -113,9 +113,6 @@
     $$
     \text{Gross Profit} = \text{Sales Price} - \text{Cost of Goods Sold}
     $$
-  variables:
-    $Sales Price$: selling price (revenue)
-    $Cost of Goods Sold$: cost of goods sold
   comment: "Gross profit is the financial gain obtained when the selling price exceeds the cost. \
             It represents the amount of money earned after cost."
   examples:
@@ -132,14 +129,14 @@
   tags: [profit, cost, margin]
   equation: |
     $$
-    \text{Price} = \frac{\text{Cost}}{1 - \text{Margin}}
+    \text{Sales Price} = \frac{\text{Cost}}{1 - \text{Margin}}
     $$
   comment: "Margin is expressed as a decimal (e.g., 30% → 0.30). This formula grosses up cost to the selling price, ensuring the margin is preserved."
   examples:
-    - example-comment: "Cost = $70, Margin = 0.30 → Price = $100"
+    - example-comment: "Cost = $70, Margin = 0.30 → Sales Price = $100"
       example-equation: |
         $$
-        \text{Price} = \frac{70}{1 - 0.30} = \frac{70}{0.70} = 100
+        \text{Sales Price} = \frac{70}{1 - 0.30} = \frac{70}{0.70} = 100
         $$
 
 # Item cost given price and margin
@@ -149,7 +146,7 @@
   tags: [profit, cost, margin]
   equation: |
     $$
-    \text{Cost} = \text{Price} \times (1 - \text{Margin})
+    \text{Cost} = \text{Sales Price} \times (1 - \text{Margin})
     $$
   comment: "Rearranging the price formula allows cost to be derived from price and margin.  "
   examples:
@@ -158,23 +155,19 @@
         $$
         \text{Cost} = 100 \times (1 - 0.30) = 100 \times 0.70 = 70
         $$  
-    - example-comment: "Price = $120, Margin = 0.30  → Cost = $84"
-      example-equation: |
-        $$
-        \text{Cost} = 120 \times (1 - 0.30) = 100 \times 0.70 = 84
-        $$
 
 # Margin given selling price and cost
-- id: distributor-margin-customer-price-distributor-price
-  title: Distributor margin given Customer price and Distributor Price
+- id: margin-given-price-and-cost
+  title: Margin given Price and Cost
   categories: [margin, pricing]
   tags: [profit, cost, margin]
   equation: |
     $$
-    \text{Distributor Margin} =
-    \frac{\text{Customer Price} - \text{Distributor Price}}{\text{Customer Price}}
+    \text{Margin} = 
+    \frac{\text{Sales Price} - \text{Cost of Goods Sold}}{\text{Sales Price}} \times 100\%
     $$
-  comment: "When both distributor and customer discounts apply, the distributor's margin is determined by the gap between the two net prices:  Distributor Price = List Price × (1 − Distributor Discount)  Customer Price = List Price × (1 − Customer Discount)  "
+  comment: "Calculates the profit margin based on the selling price and cost of \ 
+            goods sold. Margin is expressed as a percentage."
   examples:
     - example-comment: |
         - List Price = $100  
