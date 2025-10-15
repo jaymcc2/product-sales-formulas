@@ -1,3 +1,24 @@
+# Example formula block for reference:
+# - id: example-formula
+#   title: Example Formula Title
+#   categories: [category1, category2]
+#   tags: [tag1, tag2]
+#   variables:
+#     - "$x$ description of variable x"
+#     - "$y$ description of variable y"
+#   equation: |
+#     $$
+#     x = y + 1
+#     $$
+#   comment: "Brief explanation of the formula."
+#   examples:
+#     - example-comment: "Sample input and output."
+#       example-equation: |
+#         $$
+#         x = 2, y = 1
+#         $$
+#
+# Categories and tags help organize formulas for easy searching.
 # Available categories:
 # - basic math
 # - margin
@@ -33,9 +54,27 @@
   tags: [price, cost, change]
   equation: |
     $$
-    \text{Percentage Change} = \frac{\text{New Value} - \text{Old Value}}{\text{Old Value}} \times 100\%
+    \text{Percentage Change} = \frac{P_1 - P_0}{|P_0|} \times 100\%
     $$
-  comment: "Percentage change measures the relative difference between a new value and an old value. Positive result → increase, negative result → decrease."
+  variables:
+    - "$P_0$ original value (non-zero)"
+    - "$P_1$ new value"
+  comment: "Percentage change measures how much a quantity has increased or \
+            decreased relative to its original value, expressed as a percentage. \
+            It quantifies the proportional difference between an initial value \
+            and a new value, providing a normalized way to compare changes across \
+            different scales."
+  examples:
+    - example-comment: "Original Value = 50, New Value = 75 → Percentage Change = 50%"
+      example-equation: |
+        $$
+        \text{Percentage Change} = \frac{75 - 50}{|50|} \times 100\% = \frac{25}{50} \times 100\% = 50\%
+        $$
+    - example-comment: "Original Value = 80, New Value = 60 → Percentage Change = -25%"
+      example-equation: |
+        $$
+        \text{Percentage Change} = \frac{60 - 80}{|80|} \times 100\% = \frac{-20}{80} \times 100\% = -25\%
+        $$
 
 # Sales price given cost and margin
 - id: sales-price-given-cost-and-margin

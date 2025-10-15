@@ -13,3 +13,8 @@ $$
 Percentage change measures the relative difference between a new value and an old value.  
 - Positive result → increase  
 - Negative result → decrease  
+
+
+$$
+\text{Percentage Change} = \frac{P_1 - P_0}{|P_0|} \times 100\%
+$$
