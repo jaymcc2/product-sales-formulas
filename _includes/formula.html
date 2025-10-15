@@ -12,7 +12,7 @@
         </div>
     {% endif %}
     {% if include.formula.comment %}
-    <div class="block formula-comment">{{ include.formula.comment }}</div>
+    <div class="block formula-comment">{{ include.formula.comment | markdownify }}</div>
     {% endif %}
     {% if include.formula.examples %}
     
