@@ -57,8 +57,8 @@
     \text{Percentage Change} = \frac{P_1 - P_0}{|P_0|} \times 100\%
     $$
   variables:
-    - "$P_0$ original value (non-zero)"
-    - "$P_1$ new value"
+    $P_0$: original value (non-zero)
+    $P_1$: new value
   comment: "Percentage change measures how much a quantity has increased or \
             decreased relative to its original value, expressed as a percentage. \
             It quantifies the proportional difference between an initial value \
@@ -86,8 +86,8 @@
     \text{Percentage Difference} = \frac{|P_1 - P_0|}{\frac{|P_0| + |P_1|}{2}} \times 100\%
     $$
   variables:
-    - "$P_0$ -- first value (non-zero)"
-    - "$P_1$ -- second value (non-zero)"
+    $P_0$: first value (non-zero)
+    $P_1$: second value (non-zero)
   comment: "Percentage difference quantifies the relative difference between two values, \
             regardless of their order. It is useful for comparing the magnitude of change \
             between two quantities, providing a normalized measure of how different they are \
@@ -170,10 +170,10 @@
   categories: [shop math, tooling, cost savings]
   tags: [insert, usage, tool, manufacturing]
   variables: 
-    - "$I_p$ inserts used per part (expected, real-valued)"
-    - "$z$ number of teeth (inserts mounted in cutter body)"
-    - "$z_i$ number of usable edges per insert"
-    - "$T$ tool life (parts per insert change)"
+    $I_p$: inserts used per part (expected, real-valued)
+    $z$: number of teeth (inserts mounted in cutter body)
+    $z_i$: number of usable edges per insert
+    $T$: tool life (parts per insert change)
   equation: 
     $$
     I_p \;=\; \frac{\dfrac{z}{z_i}}{T} \;=\; \frac{z}{z_i\,T}
