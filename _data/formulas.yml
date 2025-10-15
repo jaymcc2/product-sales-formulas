@@ -206,7 +206,31 @@
         \text{Coefficient of Variation (CV)} = \frac{50}{200} \times 100 = .25
         $$
 
-
+# Range to Mean Ratio (Range/Mean)
+- id: range-to-mean-ratio
+  title: Range to Mean Ratio (Range/Mean)
+  categories: [statistics, forecast]
+  tags: []
+  equation: |
+    $$
+    \text{Range to Mean Ratio} = \frac{\text{Max} - \text{Min}}{\mu}
+    $$
+  variables:
+    $\text{Max}$: maximum value in the dataset
+    $\text{Min}$: minimum value in the dataset
+    $\mu$: mean of the data
+  comment: |
+    The range to mean ratio provides a simple measure of variability by comparing the spread of the data (range) to its average level (mean).
+    - High ratio → wide range relative to mean, indicating more variability
+    - Low ratio → narrow range relative to mean, indicating more stability
+  examples:
+    - example-comment: |
+        If a product has average weekly sales $\mu$=200 units, with max sales=300 units and min sales=100 units:
+        Interpretation: weekly sales vary by 1.0 times the mean.
+      example-equation:
+        $$
+        \text{Range to Mean Ratio} = \frac{300 - 100}{200} = \frac{200}{200} = 1.0
+        $$
 
 
 
