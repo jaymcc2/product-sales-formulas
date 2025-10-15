@@ -201,7 +201,7 @@
     - example-comment: |
         If a product has average weekly sales $\mu$=200 units, with standard deviation $\sigma$=50 units:
         Interpretation: weekly sales vary by 25% relative to the mean.
-      example-formula:
+      example-equation:
         $$
         \text{Coefficient of Variation (CV)} = \frac{50}{200} \times 100 = .25
         $$
