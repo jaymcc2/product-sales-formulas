@@ -76,6 +76,34 @@
         \text{Percentage Change} = \frac{60 - 80}{|80|} \times 100\% = \frac{-20}{80} \times 100\% = -25\%
         $$
 
+# Percentage difference formula
+- id: percentage-difference
+  title: Percentage Difference
+  categories: [basic math]
+  tags: [price, cost, comparison]
+  equation: |
+    $$
+    \text{Percentage Difference} = \frac{|P_1 - P_0|}{\frac{|P_0| + |P_1|}{2}} \times 100\%
+    $$
+  variables:
+    - "$P_0$ -- first value (non-zero)"
+    - "$P_1$ -- second value (non-zero)"
+  comment: "Percentage difference quantifies the relative difference between two values, \
+            regardless of their order. It is useful for comparing the magnitude of change \
+            between two quantities, providing a normalized measure of how different they are \
+            relative to their average."
+  examples:
+    - example-comment: "Value 1 = 50, Value 2 = 75 → Percentage Difference = 40%"
+      example-equation: |
+        $$
+        \text{Percentage Difference} = \frac{|75 - 50|}{\frac{|50| + |75|}{2}} \times 100\% = \frac{25}{62.5} \times 100\% = 40\%
+        $$
+    - example-comment: "Value 1 = 80, Value 2 = 60 → Percentage Difference = 28.57%"
+      example-equation: |
+        $$
+        \text{Percentage Difference} = \frac{|60 - 80|}{\frac{|80| + |60|}{2}} \times 100\% = \frac{20}{70} \times 100\% \approx 28.57\%
+        $$
+
 # Sales price given cost and margin
 - id: sales-price-given-cost-and-margin
   title: Sales Price given Cost and Margin
