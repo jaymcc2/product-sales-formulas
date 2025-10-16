@@ -1,0 +1,59 @@
+<div class="formula-block" id="{{ include.formula.id }}">
+  <h3 id="title-{{ include.formula.id }}">{{ include.formula.title }}</h3>
+
+  <div class="formula-equation">
+    {{ include.formula.equation }}
+  </div>
+
+  {% if include.formula.variables %}
+    <div class="formula-variables">
+      <strong>Variables:</strong>
+
+      {%- comment -%} detect whether variables are provided as a mapping (key: value) or a list {%- endcomment -%}
+      {% assign is_map = false %}
+      {% for k, v in include.formula.variables %}
+        {% if v and v != '' %}
+          {% assign is_map = true %}
+        {% endif %}
+      {% endfor %}
+
+      {% if is_map %}
+        {% for name, desc in include.formula.variables %}
+          <div><code>{{ name }}</code> — {{ desc }}</div>
+        {% endfor %}
+      {% else %}
+        {% for item in include.formula.variables %}
+          {% assign raw = item %}
+          {% if raw contains ':' %}
+            {% assign parts = raw | split: ':' %}
+            <div><code>{{ parts[0] | strip }}</code> — {{ parts[1] | strip }}</div>
+          {% else %}
+            <div>{{ raw }}</div>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% if include.formula.comment %}
+    <div class="block formula-comment">{{ include.formula.comment | markdownify }}</div>
+  {% endif %}
+
+  {% if include.formula.examples %}
+    <div class="block">
+      {% for ex in include.formula.examples %}
+        <div class="formula-example">
+          <strong>Example:</strong>
+          {{ ex.example-comment | markdownify }}
+        </div>
+        {% if ex.example-equation %}
+          <div class="formula-example-equation">
+            {{ ex.example-equation | markdownify }}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <hr>
+</div>

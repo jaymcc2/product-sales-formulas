@@ -4,7 +4,10 @@ title: Analysis Math
 permalink: /category/analysis-math/
 ---
 
-<h2>Analysis Math Formulas</h2>
+{% include category-links.html category="analysis math" %}
+
+## Analysis Math Formulas
+
 {% assign formulas = site.data.formulas | where: "category", "analysis math" %}
 {% for formula in formulas %}
   {% include formula.html formula=formula %}

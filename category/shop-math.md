@@ -4,7 +4,10 @@ title: Shop Math
 permalink: /category/shop-math/
 ---
 
-<h2>Shop Math Formulas</h2>
+{% include category-links.html category="shop math" %}
+
+## Shop Math Formulas
+
 {% assign formulas = site.data.formulas | where: "category", "shop math" %}
 {% for formula in formulas %}
   {% include formula.html formula=formula %}
