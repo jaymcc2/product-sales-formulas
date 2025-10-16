@@ -1,10 +1,10 @@
 <div class="block formula-links">
   <strong>Formulas in this category:</strong>
-  <ul>
+  <div class="list-group">
   {% assign cat = include.category | default: page.title | downcase %}
   {% assign formulas = site.data.formulas | where: "category", cat %}
   {% for f in formulas %}
-    <li><a href="#{{ f.id }}">{{ f.title }}</a></li>
+    <a class="list-group-item list-group-item-action" href="#{{ f.id }}">{{ f.title }}</a>
   {% endfor %}
-  </ul>
+  </div>
 </div>
