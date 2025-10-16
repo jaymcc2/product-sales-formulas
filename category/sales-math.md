@@ -4,7 +4,7 @@ title: Sales Math
 permalink: /category/sales-math/
 ---
 
-{% include category-links.html category="sales math" %}
+
 
 ## Sales Math Formulas
 

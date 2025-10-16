@@ -4,7 +4,7 @@ title: Basic Math
 permalink: /category/basic-math/
 ---
 
-{% include category-links.html category="basic math" %}
+
 
 ## Basic Math
 

@@ -4,7 +4,7 @@ title: Shop Math
 permalink: /category/shop-math/
 ---
 
-{% include category-links.html category="shop math" %}
+
 
 ## Shop Math Formulas
 

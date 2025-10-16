@@ -4,7 +4,7 @@ title: Analysis Math
 permalink: /category/analysis-math/
 ---
 
-{% include category-links.html category="analysis math" %}
+
 
 ## Analysis Math Formulas
 
